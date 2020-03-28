@@ -43,76 +43,46 @@ public class Property{
     this.plot = new Plot(x, y, width, depth);
   }
 
-
-  /**
-   * @return the city
-   */
   public String getCity() {
     return city;
   }
-
-  /**
-   * @param city the city to set
-   */
+  
+  public String getOwner() {
+    return owner;
+  }
+  
+  public double getRentAmount() {
+    return rentAmount;
+  }
+  
+  public Plot getPlot() {
+    return plot;
+  }  
+  
+  public String getPropertyName() {
+    return propertyName;
+  }
+  
   public void setCity(String city) {
     this.city = city;
   }
 
-  /**
-   * @return the owner
-   */
-  public String getOwner() {
-    return owner;
-  }
-
-  /**
-   * @param owner the owner to set
-   */
   public void setOwner(String owner) {
     this.owner = owner;
   }
 
-  /**
-   * @return the propertyName
-   */
-  public String getPropertyName() {
-    return propertyName;
-  }
-
-  /**
-   * @param propertyName the propertyName to set
-   */
-  public void setPropertyName(String propertyName) {
-    this.propertyName = propertyName;
-  }
-
-  /**
-   * @return the rentAmount
-   */
-  public double getRentAmount() {
-    return rentAmount;
-  }
-
-  /**
-   * @param rentAmount the rentAmount to set
-   */
   public void setRentAmount(double rentAmount) {
     this.rentAmount = rentAmount;
   }
   
-
-  /**
-   * @return the plot
-   */
-  public Plot getPlot() {
-    return plot;
+  public void setPropertyName(String propertyName) {
+    this.propertyName = propertyName;
   }
-
+  
   @Override
   public String toString() {
     return "Property Name: " + propertyName + "\nLocated in " + city + "\nBelonging to " + owner
         + "\nRent Amount: " + rentAmount;
   }
-
 
 }

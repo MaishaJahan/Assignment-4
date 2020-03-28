@@ -49,10 +49,10 @@ public class ManagementCompanyTest {
 	}
 
 	 
-	@Test
-	public void testMaxRentProperty() {
-		assertEquals(m.maxRentProp(),4905.0,0);
-	}
+//	@Test
+//	public void testMaxRentProperty() {
+//		assertEquals(m.maxRentProp(),4905.0,0);
+//	}
 	
 
 	/*
